@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+<body>
+
+
+
+<div class="budget-wrap">
+    <h1 id="header_name">GSama</h1>
+    <div class="budget">
+        <div class="header">
+            <div class="title clearfix">
+                <span style="float: right">چقدر از این استاد راضی هستی؟</span>
+                <span class="pull-right" style="float: left"></span>
+            </div>
+        </div>
+        <div class="content">
+            <input type="range" min="0" max="100" value="50" data-rangeslider>
+        </div>
+        <div class="footer clearfix">
+            <div style="text-align: center">
+                <!--<a href="javascript:void(0)" class="btn btn-def"></a>-->
+                <a href="#" id="btn_fill" class="btn btn-pri" title="این دکمه تنها گزینه های نظر سنجی را انتخاب میکند">انتخاب گزینه ها</a>
+                <a href="#" id="btn_fill_submit" class="btn btn-pri" title="این دکمه گزینه های نظر سنجی را انتخاب، سپس برای سیستم سما ارسال میکند">انتخاب گزینه ها و ارسال</a>
+                <a href="#" id="btn_fill_submit_bypass"  class="btn btn-pri" title="همانند گزینه بالا ولی فیلتر آماری در سیستم سما رو در میزند.">انتخاب گزینه ها، دور زدن فیلتر آماری و ارسال</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="jquery-2.2.4.min.js"></script>
+<script src="rangeslider.js"></script>
+<script src="popup.js"></script>
+<script>
+    $(document).ready(function () {
+        $(function(){
+            $('input[type="range"]').rangeslider({
+                polyfill:false,
+                onInit:function(){
+                    $('.header .pull-right').text($('input[type="range"]').val()+'%');
+                },
+                onSlide:function(position, value){
+                    //console.log('onSlide');
+                    //console.log('position: ' + position, 'value: ' + value);
+                    $('.header .pull-right').text(value+'%');
+                },
+                onSlideEnd:function(position, value){
+                    //console.log('onSlideEnd');
+                    //console.log('position: ' + position, 'value: ' + value);
+                }
+            });
+        });
+
+        $("#btn_fill").on('click',function () {
+            fillOptions()
+        });
+    });
+</script>
