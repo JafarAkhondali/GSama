@@ -24,7 +24,7 @@
         }
     ],
     "description": "GSama",
-    "homepage_url": "",
+    "homepage_url": "http://example.org",
     "icons": {
         "32": "icons/icon_32.png",
         "48": "icons/icon_48.png",
@@ -44,11 +44,10 @@
         "webRequestBlocking",
         "tabs"
     ],
-    "version": "0.1",
-
+    "version": "0.2",
     "applications": {
         "gecko": {
-            "id": "jafar.akhondali@ir.diostudio",
+            "id": "jafar.akhondali2@ir.diostudio",
             "strict_min_version": "50.0"
         }
     }

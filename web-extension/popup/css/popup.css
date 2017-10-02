@@ -1,19 +1,19 @@
-
+*{box-sizing: border-box}
 @font-face {
-font-family: Vazir;
-src: url('Vazir.eot');
-src: url('Vazir.eot?#iefix') format('embedded-opentype'),
-url('Vazir.woff') format('woff'),
-url('Vazir.ttf') format('truetype');
-font-weight: normal;
+    font-family: Vazir;
+    src: url('../fonts/Vazir.eot');
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Vazir.woff') format('woff'),
+    url('../fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
 }
 
 body,html {
     border: 0;
     padding: 0;
     margin: 0;
-    height: 100%;
-    width: 100%;
+    height: 300px;
+    width: 400px;
     overflow-x: hidden;
     background: #EFEFEF;
     font:300 18px/18px Vazir;
@@ -21,7 +21,7 @@ body,html {
 
 #header_name{
     text-align: center;
-    font-size: 36px;
+    font-size: 15px;
     color: #EFEFEF;
     text-shadow: 0 0 2px  #222;
 }
@@ -58,7 +58,7 @@ body,html {
 
 .rangeslider--horizontal{
     width:100%;
-    height:28px;
+    height:14px;
 }
 
 .rangeslider--vertical{
@@ -111,20 +111,20 @@ body,html {
 
 /* Budget */
 .budget-wrap{
-    padding:40px;
-    padding-top:10px;
+    padding:10px;
+    padding-top:3px;
     background:#292942;
     box-shadow:0 25px 55px 0 rgba(0,0,0,.21),0 16px 28px 0 rgba(0,0,0,.22);
     height: 100%;
 }
 .budget-wrap .header .title{
     color:#fff;
-    font-size:18px;
-    margin-bottom:30px;
+    font-size:12px;
+    margin-bottom:10px;
 }
 .budget-wrap .header .title .pull-right{
     color:#22A7F0;
-    font-size:24px;
+    font-size:16px;
     font-weight:400;
 }
 .budget-wrap .footer{
@@ -132,8 +132,8 @@ body,html {
 }
 .budget-wrap .footer .btn{
     color:inherit;
-    padding:12px 24px;
-    border-radius:50px;
+    padding:6px 12px;
+    border-radius:99999px;
     display:inline-block;
     text-decoration:none;
 }
