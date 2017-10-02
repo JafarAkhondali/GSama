@@ -3,6 +3,7 @@
 
 # Gnu/Sama
 We all want freedom, But sometimes organizations like universities wanna take it away from us! How? by forcing us to vote how well our university professors were. if we don't, we cant do ANYTHING in our student portals. gSama( Yes, it stands for GNU/Sama ) is a simple WebExtension that automatically votes for you (a non-skippable offer for Shirazian friends xD).
+![outtt](https://cloud.githubusercontent.com/assets/11364402/26426137/9373fb32-40ec-11e7-89f0-b4cbeaaf28f8.png)
 
 ## Contributing
 **Are you a user?**
