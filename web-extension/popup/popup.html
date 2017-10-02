@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/popup.css">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="css/popup.css">
 <body>
 
+<h1 id="header_name">GSama</h1>
 
-<div class="budget-wrap">
-    <h1 id="header_name">GSama</h1>
+<ul id="tabs-swipe-demo" class="tabs">
+    <li class="tab col s6"><a class="active" href="#test-swipe-1">ارزشیابی</a></li>
+    <li class="tab col s6"><a href="#test-swipe-2">برنامه هفتگی</a></li>
+</ul>
+
+<div id="test-swipe-1" class="budget-wrap" style="width: 400px;padding-top: 15px;">
     <div class="budget">
         <div class="header">
-            <div class="title clearfix">
-                <span style="float: right">چقدر از این استاد راضی هستی؟</span>
-                <span class="pull-right" style="float: left"></span>
+            <div class="title clearfix" style="text-align: center">
+                <span style="color:#fff;text-align: center">چقدر از این استاد راضی هستی؟</span>
             </div>
         </div>
         <div class="content">
-            <input id="range_inp" type="range" min="0" max="100" value="50" data-rangeslider>
+            <p class="range-field">
+                <input id="range_inp" type="range" min="0" max="100" value="50">
+            </p>
         </div>
         <div class="footer clearfix">
             <div style="text-align: center">
-                <a href="#" id="btn_fill" class="btn btn-pri" title="تنها گزینه های نظر سنجی را انتخاب میکند">انتخاب گزینه ها</a>
-                <a href="#" id="btn_fill_submit" class="btn btn-pri" title="گزینه های نظر سنجی را انتخاب، سپس برای سیستم سما ارسال میکند">انتخاب گزینه ها و ارسال</a>
+                <!--<a href="#" id="btn_fill" class="btn btn-pri" title="تنها گزینه های نظر سنجی را انتخاب میکند">انتخاب گزینه ها</a>-->
 
-                <a href="#" id="btn_fill_bypass" style="margin: 10px;" class="btn btn-pri" title="انتخاب گزینه ها با دور زدن فیلتر آماری">انتخاب گزینه ها با دور زدن فیلتر آماری </a>
-                <a href="#" id="btn_fill_submit_bypass" style="margin: 10px;" class="btn btn-pri" title="همانند گزینه بالا ولی پس از انتخاب اطلاعات را ارسال میکند">انتخاب گزینه ها، دور زدن فیلتر آماری و ارسال</a>
-                <a class="rangeslider__fill" ></a>
+                <!--<a href="#" id="btn_fill_submit" class="btn btn-pri" title="گزینه های نظر سنجی را انتخاب، سپس برای سیستم سما ارسال میکند">انتخاب گزینه ها و ارسال</a>-->
+                <!-- Switch -->
+                <div class="switch">
+                    <label>
+                        ارسال اطلاعات
+                        <input id="auto_send" type="checkbox" checked title="بطور خودکار، پس از تایید اطلاعات ارسال میشوند">
+                        <span class="lever"></span>
+                    </label>
+                </div>
+
+                <div class="switch">
+                    <label>
+                        دور زدن فیلتر آماری
+                        <input checked id="bypass_filter" type="checkbox" title="دور زدن فیلتر آماری زمانی که تمام نمرات ارسالی رو حداقل یا حداکثر باشند">
+                        <span class="lever"></span>
+                    </label>
+                </div>
+                <br>
+                <a id="cancel" class="waves-effect waves-light btn red" >انصراف</a>
+                <a id="submit_data" class="waves-effect waves-light btn">تایید</a>
+                <!--<a href="#" id="btn_fill_bypass" style="margin: 10px;" class="btn btn-pri" title="انتخاب گزینه ها با دور زدن فیلتر آماری">انتخاب گزینه ها با دور زدن فیلتر آماری </a>-->
+                <!--<a href="#" id="btn_fill_submit_bypass" style="margin: 10px;" class="btn btn-pri" title="همانند گزینه بالا ولی پس از انتخاب اطلاعات را ارسال میکند">انتخاب گزینه ها، دور زدن فیلتر آماری و ارسال</a>-->
+
             </div>
         </div>
     </div>
 </div>
 
+<div id="test-swipe-2" class="col s12 blue" style="width: 400px">برنامه هفتگی</div>
+
 
 
 
 <script src="js/jquery-2.2.4.min.js"></script>
-<script src="js/rangeslider.js"></script>
+<script src="js/materialize.min.js"></script>
 <script src="js/popup.js"></script>
 <script src="js/final.js"></script>
 </body>

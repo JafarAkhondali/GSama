@@ -44,12 +44,5 @@
         "webRequestBlocking",
         "tabs"
     ],
-    "version": "0.2",
-    "applications": {
-        "gecko": {
-            "id": "jafar.akhondali2@ir.diostudio",
-            "strict_min_version": "50.0"
-        }
-    }
-
+    "version": "0.2"
 }

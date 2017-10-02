@@ -1,34 +1,16 @@
 $(document).ready(function () {
-    $(function(){
-        $('input[type="range"]').rangeslider({
-            polyfill:false,
-            onInit:function(){
-                $('.header .pull-right').text($('input[type="range"]').val()+'%');
-            },
-            onSlide:function(position, value){
-                $('.header .pull-right').text(value+'%');
-            },
-            onSlideEnd:function(position, value){
-                //So what?
-            }
-        });
+
+    $('#tabs-swipe-demo').tabs();
+
+    $("#submit_data").on('click',function () {
+        let autoSend = $("#auto_send").prop("checked");
+        let bypassFilter = $("#bypass_filter").prop("checked");
+        let percent = $("#range_inp").val();
+        fillOptions(percent,bypassFilter,autoSend);
     });
 
-    $("#btn_fill").on('click',function () {
-        fillOptions($("#range_inp").val(),false,false);
-    });
-
-    $("#btn_fill_submit").on('click',function () {
-        fillOptions($("#range_inp").val(),false,true);
-    });
-
-    $("#btn_fill_bypass").on('click',function () {
-        fillOptions($("#range_inp").val(),true,false);
-    });
-
-    $("#btn_fill_submit_bypass").on('click',function () {
-        fillOptions($("#range_inp").val(),true,true);
-    });
-
+    $("#cancel").on('click',function () {
+        window.close();
+    })
 
 });

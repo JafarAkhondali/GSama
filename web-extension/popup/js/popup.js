@@ -21,7 +21,7 @@ function fillOptions(percent,bypass_filter,send) {
         bypass: bypass_filter,
         send: send
     };
-    
+
     BrowserNameSpace.tabs.executeScript(null,
         {
             allFrames:true,
