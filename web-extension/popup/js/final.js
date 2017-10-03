@@ -46,31 +46,38 @@ $(document).ready(function () {
                 let className = tr[i-1].children[1].firstChild.innerText;
 
                 let classData = {
-                    name:className
+                    name: className,
                 };
 
                 let sections = [];
+
                 for(section in section_data){
                     let section_info = section.split("،");
-                    let
+
+                    const
                         class_date = section_info[0],
                         place = section_info[1],
                         teacher = section_info[2];
+
+                    const posOfDay = class_date.indexOf(':');
+                    const nameOfDay = class_date.substr(0,posOfDay);
+
+                    const fromTo = class_date.substring(pposOfDay+2,class_date.length-2).split(" تا ");
+                    const classPlace = place.substring(place.indexOf("(")+1,place.length-2).trim();
+                    const teacherName = teacher.substring(teacher.indexOf("(")+1,teacher.length-2).trim().replace("_"," ");
                     sections.append({
-                        
+                        day: nameOfDay.trim(),
+                        from: fromTo[0].trim(),
+                        to: fromTo[1].trim(),
+                        place: classPlace,
+                        teacher: teacherName
                     });
                 }
-                section_data.append();
-
-
-
+                classData["sections"] = sections;
+                section_data.append(classData);
             }
-
-
-        }
-
-
-
+        }//End for loop
+        
     });
 
 
