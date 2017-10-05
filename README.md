@@ -24,12 +24,23 @@
 
 
 <p lang="fa" dir="rtl" align="right">
-برای نصب روی مرورگر کروم/کرومیم اول فیلتر شکن رو روشن کنید و از این لینک (https://chrome.google.com/webstore/detail/lbhngldmeglddjfomjlhddplddhhockn/)
+برای نصب روی مرورگر کروم/کرومیم اول فیلتر شکن رو روشن کنید و از این لینک
+</p>
+
+https://chrome.google.com/webstore/detail/lbhngldmeglddjfomjlhddplddhhockn/     
+
+  <p lang="fa" dir="rtl" align="right">
  نصب کنید
 </p>
 
 <p lang="fa" dir="rtl" align="right">
- برای نصب روی فایرفاکس این فایل رو دانلود کنید، به بخش افزونه ها برین و فایل رو با نگه داشتن کلیک چپ توی صفحه افزونه ها رها کنین
+     برای نصب روی فایرفاکس این فایل رو دانلود کنید:   
+  </p>
+
+https://github.com/JafarAkhondali/GSama/releases/download/0.6/gsama-0.6-an.fx.xpi
+
+<p lang="fa" dir="rtl" align="right">
+  به بخش افزونه ها برین و فایل رو با نگه داشتن کلیک چپ توی صفحه افزونه ها رها کنین
 </p>
 
 
