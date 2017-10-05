@@ -24,7 +24,7 @@
         }
     ],
     "description": "GSama",
-    "homepage_url": "http://example.org",
+    "homepage_url": "https://github.com/JafarAkhondali/GSama",
     "icons": {
         "32": "icons/icon_32.png",
         "48": "icons/icon_48.png",
@@ -45,5 +45,5 @@
         "tabs",
         "storage"
     ],
-    "version": "0.2"
+    "version": "0.6"
 }

@@ -23,7 +23,6 @@ function getSections(callback) {
 
 function showTimeTable() {
     let windowConfig = {
-        focused: true,
         type: 'popup',
         state:'maximized'
     };
