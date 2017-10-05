@@ -5,7 +5,9 @@
 </p>
 
 # Gnu/Sama
-<p align="right">
+
+
+<p style='direction:rtl; text-align: right'>
 چرا این افزونه رو نیاز دارین؟
 چون وقتتون با ارزشتر از اینه که هر ترم بیاین از روی واحد ها برنامه کلاسی درست کنین یا آخرترم توی  فرجه ها بجای درس خوندن ، فرم ارزش  یابی اجباری اساتید محترم رو پر کنید
 
@@ -13,12 +15,15 @@
 اگر هم وقتش رو دارین، هم حالش رو دارین :| خیلی بیکارین نیازی نیست این افزونه رو نصب کنین بای
 
 
-<p alig="center">
   <img src='https://user-images.githubusercontent.com/11364402/31211715-47911db0-a9a8-11e7-8d5b-d91f70fd039f.gif'>
 </p>
 
+
 نصب
-====
+===
+
+<p style='direction:rtl; text-align: right'>
+
 برای نصب روی مرورگر کروم/کرومیم اول فیلتر شکن رو روشن کنید و از [اینجا](https://chrome.google.com/webstore/detail/lbhngldmeglddjfomjlhddplddhhockn/)
  نصب کنین
 
