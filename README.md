@@ -4,7 +4,8 @@
 
 </p>
 
-# Gnu/Sama
+<h1 align=center > # Gnu/Sama </h1>
+
 
 
 <p  lang="fa" dir="rtl" align="right">
@@ -20,7 +21,7 @@
 
 
 <h1 lang="fa" dir="rtl" align="right">نصب</h1>
-===
+
 
 <p lang="fa" dir="rtl" align="right">
 برای نصب روی مرورگر کروم/کرومیم اول فیلتر شکن رو روشن کنید و از این لینک (https://chrome.google.com/webstore/detail/lbhngldmeglddjfomjlhddplddhhockn/)
