@@ -57,7 +57,7 @@ https://github.com/JafarAkhondali/GSama/releases/download/0.6/gsama-0.6-an.fx.xp
 در آخر امیدوارم روزی برسه که تو هیچ دانشگاهی از سیستم های  چینی :)) و داغونی ای مثل سما و گلستان استفاده نشه
 </p>
 <p lang="fa" dir="rtl" align="right">
-این افزونه رایگان و متن باز منتشر شده. نه دانیتی درکاره نه سودی برای من داره، صرفا هدف از نوشتنش  جلوگیری از هدر رفتن زمان دانشجو ها بوده.  اگه این افزونه تونست کمی زمان براتون ذخیره کنه شماهم میتونید با معرفی افزونه به دیگران یا هرنوع کمکی، کمی زمان برای دیگران دخیره کنین
+این افزونه رایگان و متن باز منتشر شده. صرفا هدف از نوشتنش  جلوگیری از هدر رفتن زمان دانشجو ها بوده.  اگه این افزونه تونست کمی زمان براتون ذخیره کنه شماهم میتونید با معرفی افزونه به دیگران یا هرنوع کمکی، کمی زمان برای دیگران دخیره کنین
 </p>
 
 We all want freedom, But sometimes organizations like universities wanna take it away from us! How? by forcing us to vote how well our university professors were. if we don't, we cant do ANYTHING in our student portals. gSama( Yes, it stands for GNU/Sama ) is a simple WebExtension that automatically votes for you (a non-skippable offer for Shirazian friends xD).
