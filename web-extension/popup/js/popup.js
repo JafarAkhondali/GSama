@@ -1,5 +1,5 @@
 "use strict";
-var BrowserNameSpace;
+let BrowserNameSpace;
 if(typeof browser !== 'undefined' )
     BrowserNameSpace = browser ;
 else if(typeof chrome !== 'undefined' )
@@ -31,7 +31,6 @@ function fillOptions(percent,bypass_filter,send) {
                     allFrames:true,
                     file: "/scripts/fillthemall.js"},
                 function(){
-                    //Inserted ...
                 });
         });
 }

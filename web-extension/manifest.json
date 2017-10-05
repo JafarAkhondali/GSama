@@ -42,7 +42,8 @@
         "<all_urls>",
         "webRequest",
         "webRequestBlocking",
-        "tabs"
+        "tabs",
+        "storage"
     ],
     "version": "0.2"
 }

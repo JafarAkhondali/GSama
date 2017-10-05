@@ -76,7 +76,6 @@
         });
 
         if(config.bypass){
-
             let diffFromOthers = Math.floor((Math.random()*2)+2);
             let bypassChild=nthChild;
             if(bypassChild>=noOptions-1)

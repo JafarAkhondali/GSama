@@ -19,65 +19,27 @@ $(document).ready(function () {
 
 
     $("#generate_schulde").on('click',function () {
-        //Before telling what i'm doing here, i would like to say FUCK YOU SAMA
-        //FUCK YOUR CREATORS
-        //FUCK YOUR DESIGNERS
-        //FUCK ANY UNIVERSITY WHICH PAYED YOU FOR THIS SHIT
-        //Ok let's go on, it's 3:47am now and i've just started writing this shit
-        //There is no fucking id attribute or any fucking class to find which table are they using
-        //To show data of schedule, So i should to it dirty too ...
+        BrowserNameSpace.tabs.executeScript(null,
+            {
+                allFrames:true,
+                file:  "/popup/js/jquery-2.2.4.min.js"
+            }, function(){
+                BrowserNameSpace.tabs.executeScript(null,
+                    {
+                        allFrames:true,
+                        file:"/scripts/findthemall.js"
+                    }, function(res){
+                        //res is an array, mostly null. Cause it executed script on all pages
+                        //We'll only select items which are not null
+                        res = res.filter((i)=>i!= null)[0];
+                        let BG = BrowserNameSpace.extension.getBackgroundPage();
+                        BG.saveSections(res,()=>{
+                            "use strict";
+                            BG.showTimeTable();
+                        });
 
-
-        let section_data = [];
-
-        //First, I'll find 9th td of any table, the only table which has it is the schedule
-        //So now let's go to grandparent to get main table
-        let sch_table = $("table td:nth-child(9)").parent().parent();
-
-        //Select all rows and set it to tr, I know the variable "tr" is redundant here
-        //But i love it so much <3 My codes = My rules . It's non of your fucking businesses.
-        let tr = sch_table.children();
-
-        //Skip first and second rows, Cause they are shit
-        for (let i=2;i<tr.length;i++){
-            //Shows there is only one fucking row, so it's the time of class
-            if (tr[i].firstChild.children.length == 1){
-                let section_data = tr[i].firstChild.children[0].innerText.trim().split("\n");
-                let className = tr[i-1].children[1].firstChild.innerText;
-
-                let classData = {
-                    name: className,
-                };
-
-                let sections = [];
-
-                for(section in section_data){
-                    let section_info = section.split("،");
-
-                    const
-                        class_date = section_info[0],
-                        place = section_info[1],
-                        teacher = section_info[2];
-
-                    const posOfDay = class_date.indexOf(':');
-                    const nameOfDay = class_date.substr(0,posOfDay);
-
-                    const fromTo = class_date.substring(pposOfDay+2,class_date.length-2).split(" تا ");
-                    const classPlace = place.substring(place.indexOf("(")+1,place.length-2).trim();
-                    const teacherName = teacher.substring(teacher.indexOf("(")+1,teacher.length-2).trim().replace("_"," ");
-                    sections.append({
-                        day: nameOfDay.trim(),
-                        from: fromTo[0].trim(),
-                        to: fromTo[1].trim(),
-                        place: classPlace,
-                        teacher: teacherName
                     });
-                }
-                classData["sections"] = sections;
-                section_data.append(classData);
-            }
-        }//End for loop
-        
+            });
     });
 
 
